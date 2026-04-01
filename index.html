@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Morning Way | AI 自动化专家</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f8f9ff",
+              "inverse-on-surface": "#eaf1ff",
+              "primary": "#0058bc",
+              "surface-container": "#e5eeff",
+              "on-tertiary-container": "#fffbff",
+              "outline": "#717786",
+              "on-secondary-container": "#2d4c83",
+              "on-tertiary-fixed": "#351000",
+              "on-error": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#001a41",
+              "primary-fixed-dim": "#adc6ff",
+              "on-primary-container": "#fefcff",
+              "inverse-surface": "#213145",
+              "background": "#f8f9ff",
+              "on-secondary-fixed": "#001a41",
+              "on-tertiary-fixed-variant": "#7c2e00",
+              "on-secondary": "#ffffff",
+              "tertiary-container": "#c64f00",
+              "surface-dim": "#cbdbf5",
+              "surface-tint": "#005bc1",
+              "on-background": "#0b1c30",
+              "tertiary": "#9e3d00",
+              "surface-container-low": "#eff4ff",
+              "secondary-fixed": "#d8e2ff",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed-variant": "#26467d",
+              "secondary": "#405e96",
+              "on-surface": "#0b1c30",
+              "primary-fixed": "#d8e2ff",
+              "surface-container-highest": "#d3e4fe",
+              "tertiary-fixed": "#ffdbcc",
+              "on-tertiary": "#ffffff",
+              "surface-variant": "#d3e4fe",
+              "inverse-primary": "#adc6ff",
+              "surface-container-high": "#dce9ff",
+              "on-primary": "#ffffff",
+              "secondary-fixed-dim": "#adc6ff",
+              "on-primary-fixed-variant": "#004493",
+              "error": "#ba1a1a",
+              "error-container": "#ffdad6",
+              "outline-variant": "#c1c6d7",
+              "secondary-container": "#a1befd",
+              "surface": "#f8f9ff",
+              "tertiary-fixed-dim": "#ffb595",
+              "primary-container": "#0070eb",
+              "on-surface-variant": "#414755"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .floating-realism {
+        box-shadow: 0 20px 40px rgba(11, 28, 48, 0.06);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f8f9ff]/80 backdrop-blur-md shadow-[0_20px_40px_rgba(11,28,48,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#0058bc]" style="">Morning Way</div>
+<div class="hidden md:flex gap-8 items-center font-['Manrope'] font-semibold tracking-tight"><a class="text-primary border-b-2 border-primary pb-1" href="index.html">核心服务</a><a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="cases.html">案例研究</a><a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="services.html">方法论</a></div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-semibold hover:bg-primary-container transition-all active:scale-95" onclick="window.location.href='https://wa.me/34610765081'" style="">
+                立即咨询
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-3/5">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-background leading-[1.1] mb-6" style="">
+                        用 AI 替代人工，让你的<span class="text-primary" style="">业务效率提升 10 倍</span>
+</h1>
+<p class="text-on-surface-variant text-xl md:text-2xl max-w-2xl mb-10 leading-relaxed font-body" style="">
+                        我为企业搭建 AI 员工与自动化工作流系统，减少人力成本、提升产能，实现可规模化增长。
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-container transition-all shadow-lg" onclick="window.location.href='https://wa.me/34610765081'" style="">
+                            免费咨询
+                        </button>
+<a class="bg-transparent text-primary px-8 py-4 rounded-full text-lg font-semibold border-2 border-outline-variant/20 hover:border-primary transition-all inline-block text-center" href="{{DATA:SCREEN:SCREEN_16}}">查看案例</a>
+</div>
+</div>
+<div class="w-full md:w-2/5 relative">
+<div class="rounded-xl overflow-hidden shadow-2xl relative">
+<img class="w-full h-auto object-cover" data-alt="Modern abstract representation of AI automation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYPy_yGDUCDCFg0Yj2ZmUdMsjIeChrXzloPSMWlpcDjYdnq5XyeHqk3Kjn46lIRI4bykoVw1JNa9rfu0G7iBQjRUEWtvk5m2e61Jet646nQmz_pzZWdSBZfhAwKcbwKVO2L79GFwKK4pwnJW2GXU4_E72YDfFB5Nbl7AXOX39CXOnbms1E8VxAKZ6m0rNmugPo19i11D7pagWEX2S9O7Ybt-x-Onir9jkYOA7843W9gVHaFs0UMjbgYIxSsHILzGllwkNEMi5Ojtg" style=""/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
+</div>
+<!-- Accent card -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-xl hidden lg:block border border-outline-variant/10">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" style="">auto_awesome</span>
+</div>
+<div>
+<div class="text-sm font-semibold text-on-surface" style="">AI 员工系统就绪</div>
+<div class="text-xs text-on-surface-variant" style="">每小时自动处理 40+ 任务</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Abstract Background Detail -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low opacity-50 -skew-x-12 transform translate-x-1/2"></div>
+</header>
+<!-- Problem Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-widest uppercase text-sm block mb-4" style="">你的痛点</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-on-background" style="">你的业务，正在被这些问题拖垮：</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-xl floating-realism group hover:bg-surface-container transition-colors duration-500">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-4xl" style='font-variation-settings: "FILL" 1;'>payments</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4" style="">人工成本太高</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">每个月都在为重复性的人工劳动买单，行政与手动录入任务蚕食了利润空间。</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl floating-realism group hover:bg-surface-container transition-colors duration-500">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-4xl" style='font-variation-settings: "FILL" 1;'>account_tree</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4" style="">工作流程混乱</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">员工效率不稳定，工具割裂导致任务脱节，错过了关键的业务增长机会。</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl floating-realism group hover:bg-surface-container transition-colors duration-500">
+<div class="text-primary mb-6">
+<span class="material-symbols-outlined text-4xl" style='font-variation-settings: "FILL" 1;'>movie_edit</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4" style="">内容生产太慢</h3>
+<p class="text-on-surface-variant leading-relaxed" style="">难以跟上市场对高质量营销视觉、社交内容和商业资产的爆发式需求。</p>
+</div>
+</div>
+<div class="mt-16 text-center">
+<p class="text-xl font-semibold text-on-background" style="">如果这些问题你有 2 个以上，你已经在持续亏损。</p>
+</div>
+</div>
+</section>
+<!-- Solutions Bento Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="md:w-1/2">
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-on-background" style="">我帮你搭建一套真正能赚钱的 AI 系统</h2>
+</div>
+<div class="md:w-1/3 text-on-surface-variant text-lg" style="">
+                    不是教你用工具，而是直接帮你构建完整系统，用更少的人，做更多的事。
+                </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between border border-outline-variant/10 group overflow-hidden relative">
+<div class="relative z-10">
+<h3 class="font-headline text-3xl font-bold mb-4" style="">AI 员工系统搭建</h3>
+<p class="text-on-surface-variant max-w-md mb-8" style="">为你的业务定制 AI 员工，自动完成客服、内容运营、数据处理等工作，24/7 不间断运行。</p>
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-semibold text-primary" style="">定制智能体</span>
+<span class="px-3 py-1 bg-surface-container rounded-full text-xs font-semibold text-primary" style="">RAG 知识库</span>
+</div>
+</div>
+<div class="absolute bottom-0 right-0 w-3/5 h-full opacity-10 group-hover:opacity-20 transition-opacity">
+<img class="w-full h-full object-cover grayscale" data-alt="Abstract minimalist digital architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1q2m4lJMHehEPBnxoH-NtL77CfUkLfSZsUtbnD0DnkZpf--_zlijJ7VqeX_xbKJa6L72cXFHgZc2bNhnSIpJ1SZYt3UJKWW9kKCXlTz2EZxkd5nxUHxOwAuW8masmzwPrxL24dzjtxlxhZyVGhh0cZwHemiBzz8SSwIm2FoWZKBaeMCIqoyWkgxVTitetd78Qacq73CSTvoPX28Cexm89jcJBhBv0r3E72jvnO3McQM7D04WD_rwBHxiK3nTG8u5s8oPQiD_P9hI" style=""/>
+</div>
+</div>
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between overflow-hidden relative">
+<div class="relative z-10">
+<h3 class="font-headline text-3xl font-bold mb-4" style="">OpenClaw 工作流定制</h3>
+<p class="text-primary-fixed-dim/90 mb-6" style="">基于 OpenClaw 构建多步骤复杂业务自动化系统，连接你的所有工具与数据。</p>
+</div>
+<div class="mt-auto">
+<span class="material-symbols-outlined text-6xl opacity-50" style="">hub</span>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-highest rounded-xl p-8 flex flex-col justify-between group">
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2" style="">ComfyUI 商业视觉生产</h3>
+<p class="text-on-surface-variant text-sm mb-4" style="">用 AI 批量生成高质量商品图、海报及视频，成本仅为传统影棚的 1/10。</p>
+</div>
+<div class="rounded-lg overflow-hidden h-32 relative">
+<img class="w-full h-full object-cover" data-alt="Vibrant abstract fluid art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_FK4KF84DoN7t8vu8r-eqsnoClN-KlpnIkAA2GPnk6WFdDThkNSPwCjorOaII-SxvP8aiLLahFNkC6NWf0vQazzrfr3J2GME2oT4rivuPw22jIVJhDr99iUdACOTpPdMLqr-9w_ZzR_RB1mEsulDOrAwD7IbFg6DQxizKreEVlIQqVUpd-gKLY46yh6DTAAyVuknqSa7rJjAbuEEzjyzEosYuFPSIHyrw0UrwMP7JdWSEFmvNT52gl4RjmFJ0w91ArYA35QCjBRQ" style=""/>
+</div>
+</div>
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 flex flex-col md:flex-row gap-8 items-center border border-outline-variant/10">
+<div class="md:w-1/2">
+<h3 class="font-headline text-2xl font-bold mb-2" style="">私人定制解决方案</h3>
+<p class="text-on-surface-variant" style="">根据你的业务，设计完整 AI 自动化方案。不仅是提供工具，更是通过流程优化帮你省钱、赚钱。</p>
+</div>
+<div class="md:w-1/2 grid grid-cols-2 gap-4">
+<div class="aspect-square bg-surface-container-lowest rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" style="">psychology</span>
+</div>
+<div class="aspect-square bg-surface-container-lowest rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" style="">data_exploration</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ROI / Results Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-on-background" style="">真实效果，拒绝空谈</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center relative z-10">
+<div class="p-8">
+<div class="text-6xl font-extrabold text-primary mb-4 tracking-tighter" style="">10x</div>
+<p class="font-headline text-xl font-bold mb-2" style="">工作效率提升</p>
+<p class="text-on-surface-variant" style="">通过自动化视觉管线，以远超以往的速度交付商业资产。</p>
+</div>
+<div class="p-8 relative">
+<!-- Subtle divider -->
+<div class="hidden md:block absolute left-0 top-1/4 bottom-1/4 w-0.5 bg-gradient-to-b from-transparent via-outline-variant/40 to-transparent"></div>
+<div class="text-6xl font-extrabold text-primary mb-4 tracking-tighter" style="">70%</div>
+<p class="font-headline text-xl font-bold mb-2" style="">人力成本降低</p>
+<p class="text-on-surface-variant" style="">通过 AI 替代重复性手动任务，大幅削减运营开支。</p>
+<div class="hidden md:block absolute right-0 top-1/4 bottom-1/4 w-0.5 bg-gradient-to-b from-transparent via-outline-variant/40 to-transparent"></div>
+</div>
+<div class="p-8">
+<div class="text-6xl font-extrabold text-primary mb-4 tracking-tighter" style="">100+</div>
+<p class="font-headline text-xl font-bold mb-2" style="">日产出视频</p>
+<p class="text-on-surface-variant" style="">利用视觉内容系统，实现内容的指数级规模化覆盖。</p>
+</div>
+</div>
+<!-- Background pulse detail -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/5 rounded-[100%] blur-3xl -z-0"></div>
+</div>
+</section>
+<!-- Methodology Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20">
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-on-background" style="">合作流程</h2>
+<div class="h-1 w-20 bg-primary mt-6"></div>
+</div>
+<div class="space-y-4">
+<!-- Step 1 -->
+<div class="flex flex-col md:flex-row gap-8 items-start py-8 border-b border-outline-variant/10 group">
+<div class="w-12 text-3xl font-headline font-black text-outline-variant group-hover:text-primary transition-colors" style="">01</div>
+<div class="flex-1">
+<h3 class="text-2xl font-bold mb-2" style="">需求沟通</h3>
+<p class="text-on-surface-variant text-lg max-w-2xl" style="">深入调研你现有的工作流，识别高价值的自动化机会并进行业务诊断。</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col md:flex-row gap-8 items-start py-8 border-b border-outline-variant/10 group">
+<div class="w-12 text-3xl font-headline font-black text-outline-variant group-hover:text-primary transition-colors" style="">02</div>
+<div class="flex-1">
+<h3 class="text-2xl font-bold mb-2" style="">方案设计</h3>
+<p class="text-on-surface-variant text-lg max-w-2xl" style="">设计你的定制 AI 员工框架与数据编排策略，确保方案的可落地性。</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col md:flex-row gap-8 items-start py-8 border-b border-outline-variant/10 group">
+<div class="w-12 text-3xl font-headline font-black text-outline-variant group-hover:text-primary transition-colors" style="">03</div>
+<div class="flex-1">
+<h3 class="text-2xl font-bold mb-2" style="">系统搭建</h3>
+<p class="text-on-surface-variant text-lg max-w-2xl" style="">开发并将 AI 系统集成到你现有的技术栈中，实现无缝衔接。</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col md:flex-row gap-8 items-start py-8 border-b border-outline-variant/10 group">
+<div class="w-12 text-3xl font-headline font-black text-outline-variant group-hover:text-primary transition-colors" style="">04</div>
+<div class="flex-1">
+<h3 class="text-2xl font-bold mb-2" style="">测试优化</h3>
+<p class="text-on-surface-variant text-lg max-w-2xl" style="">微调模型并优化提示词（Prompts），以达到最佳的效率与准确度。</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col md:flex-row gap-8 items-start py-8 group">
+<div class="w-12 text-3xl font-headline font-black text-outline-variant group-hover:text-primary transition-colors" style="">05</div>
+<div class="flex-1">
+<h3 class="text-2xl font-bold mb-2" style="">交付培训</h3>
+<p class="text-on-surface-variant text-lg max-w-2xl" style="">赋能你的团队，教会他们如何管理并与新的 AI 同事协同进化。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-primary rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
+<!-- Decorative Circle -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary-container rounded-full opacity-50"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary-container rounded-full opacity-50"></div>
+<div class="relative z-10">
+<h2 class="font-headline text-4xl md:text-6xl font-extrabold text-on-primary mb-8 tracking-tighter" style="">现在开始，让 AI 为你工作</h2>
+<p class="text-primary-fixed text-xl md:text-2xl mb-12 max-w-2xl mx-auto font-body opacity-90" style="">
+                        每拖一天，你都在多付人工成本。立即预约免费咨询，获取专属 AI 自动化方案。
+                    </p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="bg-surface-container-lowest text-primary px-10 py-5 rounded-full text-xl font-bold hover:bg-surface-bright transition-all shadow-2xl" onclick="window.location.href='https://wa.me/34610765081'" style="">
+                            立即预约免费咨询
+                        </button>
+</div>
+<div class="mt-12 flex flex-col md:flex-row justify-center items-center gap-8 text-on-primary/80">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" style="">mail</span>
+<span class="font-medium" style="">qqshishuiwuhen@gmail.com</span>
+</div>
+<div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='https://wa.me/34610765081'">
+<span class="material-symbols-outlined text-sm" style="">call</span>
+<span class="font-medium" style="">WhatsApp: +34 610 76 50 81</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#ffffff] dark:bg-[#0b1c30]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto border-t border-outline-variant/10">
+<div class="md:col-span-1">
+<div class="font-['Manrope'] font-bold text-[#0058bc] text-2xl mb-6" style="">Morning Way</div>
+<p class="font-['Inter'] text-sm text-[#0b1c30]/60 dark:text-slate-400 max-w-xs" style="">
+                    专注于 AI 自动化，助力释放人类潜能，提升组织效率。
+                </p>
+</div>
+<div class="flex flex-col gap-4"><h4 class="font-bold text-on-surface mb-2">服务项目</h4><a class="font-['Inter'] text-sm text-on-surface-variant hover:text-primary transition-all duration-200" href="{{DATA:SCREEN:SCREEN_8}}">核心能力</a><a class="font-['Inter'] text-sm text-on-surface-variant hover:text-primary transition-all duration-200" href="{{DATA:SCREEN:SCREEN_16}}">案例研究</a><a class="font-['Inter'] text-sm text-on-surface-variant hover:text-primary transition-all duration-200" href="{{DATA:SCREEN:SCREEN_10}}">方法论</a></div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-on-surface mb-2" style="">联系我</h4>
+<a class="font-['Inter'] text-sm text-[#0b1c30]/60 hover:text-[#0070eb] underline decoration-2 underline-offset-4 transition-all duration-200" href="mailto:qqshishuiwuhen@gmail.com" style="">qqshishuiwuhen@gmail.com</a>
+<a class="font-['Inter'] text-sm text-[#0b1c30]/60 hover:text-[#0070eb] underline decoration-2 underline-offset-4 transition-all duration-200" href="https://wa.me/34610765081" style="">WhatsApp: +34 610 76 50 81</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-on-surface mb-2" style="">法律信息</h4>
+<a class="font-['Inter'] text-sm text-[#0b1c30]/60 hover:text-[#0070eb] underline decoration-2 underline-offset-4 transition-all duration-200" href="#" style="">隐私政策</a>
+<a class="font-['Inter'] text-sm text-[#0b1c30]/60 hover:text-[#0070eb] underline decoration-2 underline-offset-4 transition-all duration-200" href="#" style="">服务条款</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-outline-variant/10">
+<p class="font-['Inter'] text-sm text-[#0b1c30]/60 dark:text-slate-400" style="">
+                © 2024 Morning Way AI 自动化专家。保留所有权利。
+            </p>
+</div>
+</footer>
+</body></html>
